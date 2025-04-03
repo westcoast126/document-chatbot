@@ -15,6 +15,7 @@ numpy>=1.20.0 # Required by many ML libraries
 
 # --- Add libraries for Vector Stores ---
 chromadb>=0.4.15 # Vector database
+pysqlite3-binary # Recommended for ChromaDB to ensure compatible SQLite version
 # faiss-cpu # Or faiss-gpu if you have CUDA 
 
 # Note: pydantic v1 might be needed if older langchain versions are used.
