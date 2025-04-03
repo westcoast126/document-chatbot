@@ -1,3 +1,10 @@
+# Add this block to override the system's SQLite version
+# Must be executed *before* any module that might import sqlite3 (like chromadb)
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# --- End of override block ---
+
 # backend/main.py
 import os
 import shutil
