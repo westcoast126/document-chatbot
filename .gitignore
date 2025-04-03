@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Virtual Environment
+backend/venv/
+
+# Dependency directories
+frontend/node_modules/
+
+# Build artifacts
+frontend/dist/
+
+# IDE / OS specific
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+backend/uploaded_files/
+backend/chroma_db/
+
+# Secrets / Keys (Good practice, even if API key is handled via headers now)
+*.env
+.env*
+secrets/
+*.key 

@@ -1,0 +1,21 @@
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0
+python-multipart # For file uploads
+# pydantic V1 is often needed by libraries like langchain, adjust if needed
+# pydantic < 2.0
+
+# --- Add libraries for document parsing ---
+pypdf>=4.0.0 # For PDF parsing
+# python-docx >= 1.0.0 # Example for DOCX
+
+# --- Add libraries for AI/ML ---
+openai>=1.5.0 # OpenAI API client
+langchain>=0.1.0 # For text splitting
+numpy>=1.20.0 # Required by many ML libraries
+
+# --- Add libraries for Vector Stores ---
+chromadb>=0.4.15 # Vector database
+# faiss-cpu # Or faiss-gpu if you have CUDA 
+
+# Note: pydantic v1 might be needed if older langchain versions are used.
+# Ensure compatibility between langchain, chromadb, and openai versions. 
